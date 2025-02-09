@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Reproduzindo audio</h1>
+    <!-- <audio src="./NeverSlowMeDown-Everet Almond.mp3" controls autoplay></audio>
+    100% compativel com navegadores, MP3 WAV OGG -->
+    <P>
+        O atributo "preload" indica se o áudio será pré carregado ou não, e aceita 3 valores: <br>
+
+         * metadata: vai carregar apenas as informações sobre o arquivo ( tamanho, tempo, informações de direitor, etc. ( mais recomendado)) <br>
+
+         * none : não vai carregar absolutamente nada, até o usuario clique no botão play ou um script inicie a reprodução. <br>
+
+         * auto : ( padrão) vai carregar o arquivo de áudio inteiro assim que a pagina for carregada, mesmo que o úsuario nunca aperte o play (dependendo do audio, torna a pagina mais pesada) <br>
+    </P>
+    <p>
+        * O atributo "Controls" vai apresentar o play na tela. Caso não seja colocado na tag &lt audio &gt, o controle será transparente e o usuario não podera interagir com ele. <br>
+
+        * O atributo "autoplay", quando inserido, vai iniciar a reprodução do audio assim que a página for carregada. <br>
+
+        * O atributo "loop" vai fazer com que o audio seja repetido eternamente assim que terminar a sua reprodução.
+    </p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="./NeverSlowMeDown-Everet Almond.mp3" type="audio/mpeg">
+        <source src="./NeverSlowMeDown-Everet Almond.ogg" type="audio/ogg">
+        <source src="./NeverSlowMeDown-Everet Almond.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="./NeverSlowMeDown-Everet Almond.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

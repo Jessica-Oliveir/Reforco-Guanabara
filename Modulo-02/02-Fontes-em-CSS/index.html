@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: Arial, Helvetica, sans-serif ;
+            /* 
+            Medidas Absolutas:
+            cm, mm, in (polegadas EQUIVALE 2,54CM), px, pt (ponto), pc (paica)     
+            
+            Medidas Relativas:
+            em: (Medida relativa ao atual tamanho da fonte, realtivo ao "M" maiusculo de uma fonte),
+            ex: ( Relativo a altura x de uma fonte, relativo a altura "x" de uma fonte)
+            rem: ( tipo "em", porem é relativo ao root, a fonte que esta configurada no body)
+            vw: ( significa view width, que é a largura da view port ( tamanho da tela), então é uma porcentagem da largura de uma view port  )
+            vh: ( que é a altura de view port)
+
+            As medidas recomendadas pela W3C são: "px" e "em"   
+            16px geralmente = 1em   
+             */  
+            font-size: 1em;      
+            
+            /*weight = peso ( temos: lighter, normal, bold, bolder), pode variar de 100 a 900
+            width = largura
+            heigth = altura
+
+            */        
+            h1{
+
+                font: italic bolder 3em 'Work Sans', sans-serif;
+
+                /* Propriedade Shorthand font ( uma simplificada ao fazer as configirações da fonte), sendo:display: 
+
+                font-style -> font-weight -> font-size -> font-family
+                
+                font-family: work sans; sans-serif
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic; */
+            }
+            h2{
+                font: normal bold 2em 'Work Sans';
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1>Trabalhando com Fontes</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, omnis. Numquam, ea optio totam debitis sunt mollitia maxime incidunt, ut excepturi odit sapiente laborum iure impedit magnam cupiditate provident amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sint eum harum deleniti voluptatem, repudiandae et quam libero aut at vero ad nobis illo voluptatibus. Excepturi veniam praesentium accusantium ad!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae aperiam repellat qui a dicta, cum veritatis nostrum ab eligendi corrupti maiores fuga inventore maxime esse perferendis quas. Voluptas, et recusandae?</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vel maiores nam. Natus voluptates debitis maiores possimus? Animi ipsum tempore enim, aut facere molestias aliquid, cumque voluptate, laborum iusto ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi aliquam, cum eos illum, reprehenderit hic odio est quaerat, tempora velit quas minima temporibus! Dolores similique voluptates voluptas eaque doloremque.</p>
+</body>
+</html>

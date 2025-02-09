@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgrey;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav{
+            background-color: rgb(65, 64, 64);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(95, 92, 92);
+        }    
+        
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+<h1>Meu Site</h1>
+<nav>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>    
+</nav>
+    </header>
+
+    <main>
+<section id="assuntos">
+<p>Esportes Política Tecnologia</p>
+</section>
+
+<section id="noticias">
+    <article>
+        <h2>Principais tags na Criação de um site</h2>
+
+        <h3>&lt;header&gt;</h3>
+        <p>Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
+            mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos &lt;h1&gt; - &lt;h6&gt;
+            e subtítulos. Podem também conter menus de navegação</p>
+
+            <h3>&lt;nav&gt;</h3>
+            <p>Define uma área que possui os links de navegação pela 
+                estrutura de páginas que vão compor o website. Um 
+                &lt;nav&gt; pode estar dentro de um &lt;header&gt;. Como exeplo temos os links no começo da página, são Nav.</p>
+
+                <h3>&lt;main&gt;</h3>
+                <p>É um agrupador usado para delimitar o conteúdo 
+                    principal do nosso site. Normalmente concentra as 
+                    seções &lt;section&gt;artigos &lt;article&gt; e conteúdos periféricos. </p>
+
+                    <h3>&lt;section&gt;</h3>
+                    <p>Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou 
+                        dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação 
+                        oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente 
+                        com um cabeçalho”.</p>
+
+                        <h3>&lt;article&gt;</h3>
+                        <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um &lt;article&gt; para delimitar um post de blog ou fórum, uma notícia, etc</p>
+
+                        <h3>&lt;aside&gt;</h3>
+                        <p>Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo &lt;aside&gt; está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”, exemplo no material de PDF.</p>
+
+                        <H3>&lt;footer&gt;</H3>
+                        <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um &lt;aside&gt;), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site documentos relacionados.</p>
+                
+        <aside>
+            <p>Artigo escrito por José da Silva</p>
+        </aside>
+    </article>
+
+</section>
+    </main>
+
+    <footer>
+<p> Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+</body>
+</html>

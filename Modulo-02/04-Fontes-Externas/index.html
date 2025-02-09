@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fones Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Valentine';
+            src: url('fonts/Valentine\ Moment.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;}
+
+            @font-face {
+                font-family: 'love';
+                src: url('fonts/love\ larry\ ttf.ttf') format(truetype);
+            }
+
+            /* 
+            Tipos de format:
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            */
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Para usar uma fonte externa baixada ou especifica, geralmente vai estar "otf" ou "ttf". Digamos que um cliente solicitou uma fonte diferente, que não temos no google fonts, uma outra opção seria o site "dafont.com", lá tem varias opções de tematicas. Nele, precisaremos baixar a font, descompactar da pasta zip, muitas vezes vira no formato otf e ttf. Devemos fazer uma pasta para colocar elas no visual studio code. E na opção style ou no css separado devemos usar o "@font-face", que serve para incorporar fontes personalizadas de um site. </p>
+    <p>Apos colocar o @font-face, dentro do style ou no css separado, aparecerá:</p>
+    <ul>
+        <li>font-family: (onde devemos colocar um nome para determinada fonte)</li>
+        <li>src: url (  ) - (onde devemos colocar a fonte que foi baixada, nome exatamente igual do arquivo)</li>
+    </ul>
+
+    <p>Devemos acrecentar:</p>
+    <ul>
+        <li>Format (  )</li>
+        <li>sendo: opentype (otf),truetype (ttf), embedded-opentype, truetype-aat (Apple Advanced Typography), sendo o otf e ttf mais utiliados </li>
+    </ul>
+    <p>E caso tenha varios tipos de formatos (ex: otf, ttf, entre outros), podemos acrecentar outras URL( ) e outros Format( ), pois assim se adequara a varios tipos de navegadores.</p>
+
+    <h2>Antes de baixar as fontes, lembrar de verificar nas configurações das mesmas, se possuem acentuação!</h2>
+</body>
+</html>

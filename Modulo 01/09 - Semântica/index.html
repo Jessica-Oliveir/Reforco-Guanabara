@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+    <title>Atividade 09</title>
+</head>
+<body>
+    <h1>Já ouviu falar em semântica?</h1>
+    <p>É um ramo que estuda o significado das palavras, significado dos 
+        vocábulos, por oposição à sua forma.</p>
+        <p>Na HTML4, tínhamos tags como &lt;b&gt; que colocava um texto em negrito, &lt;u&gt; que 
+            colocava o termo sublinhado e &lt;blink&gt; que fazia o texto piscar. Essas eram tags que 
+            representavam apenas uma forma. Você dizia que queria um texto sublinhado, mas 
+            qual era o motivo? Qual era o sentido de sublinhar alguma coisa? Vamos ver um 
+            exemplo: </p>
+            <p>"Juvenal era um sujeito de muita sorte. E já 
+começou de pequeno, onde morou na <u>Rua Marquês 
+de Lira Filho</u>, um local de fácil acesso ao 
+Centro da cidade." </p>
+<p>Em HTML4, colocamos o par de tags &lt;u&gt; e &lt;/u&gt; para delimitar o termo Rua Marquês 
+    de Lira Filho. Isso seria uma maneira de determinar somente um formato visual para 
+    chamar atenção para o endereço onde o cara nasceu. O sublinhado é apenas uma 
+    forma, sem significado explícito. Sublinhamos só pra chamar atenção visualmente. </p>
+    <p>Já a HTML5 chegou com o conceito de valorizar a semântica, logo suas tags tentam 
+        levar um significado embutido muito forte. Logo, a frase acima ficaria assim: <br>
+        <p>Juvenal era um sujeito de muita sorte. E já 
+        começou de pequeno onde morou na <address>Rua 
+        Marquês de Lira Filho</address>um local de 
+        fácil acesso ao Centro da cidade. </p>
+    </p>
+    <p>Note que agora, usamos a tag &lt;address&gt; para dar um significado ao destaque que 
+        fizemos. Estamos chamando atenção para Rua Marquês de Lira Filho por se tratar do 
+        endereço da pessoa. No caso, um navegador de celular pode até sugerir que você veja 
+        o mapa do local e trace a rota para chegar lá. Viu? SIGNIFICADO! </p>
+</body>
+</html>

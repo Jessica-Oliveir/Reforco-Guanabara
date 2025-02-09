@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* Para responsividade, sempre usar o min-width e max-width */
+            min-width: 280px;
+            max-width: 800px;
+            /* Para centralizar conteudo no meio */
+            margin: auto;
+        }
+        /*  Colando a imagem em 100%, ela vai se adaptar ao min-width e max-width estabelecido */
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae placeat ex sed modi veniam laboriosam nulla minima tempore, fugit vitae maxime sequi mollitia vel eius pariatur amet repellat adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eius ea modi, eligendi recusandae assumenda molestiae ex in pariatur cupiditate facere aspernatur? Molestiae praesentium obcaecati vero nisi qui illo dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem similique ipsum culpa ab rem ut, magni vitae harum, totam commodi necessitatibus, dolorum nemo possimus! Recusandae tenetur placeat animi in!</p>
+    <picture>
+        <!-- até 600px a imagem será da Irina pq, sendo o maximo 600, apos isso a imagem entra a imagem normal, grande -->
+        <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg">
+        <img src="./imagens/irina-blok.jpg" alt="Irina Blok">
+    </picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae placeat ex sed modi veniam laboriosam nulla minima tempore, fugit vitae maxime sequi mollitia vel eius pariatur amet repellat adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eius ea modi, eligendi recusandae assumenda molestiae ex in pariatur cupiditate facere aspernatur? Molestiae praesentium obcaecati vero nisi qui illo dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem similique ipsum culpa ab rem ut, magni vitae harum, totam commodi necessitatibus, dolorum nemo possimus! Recusandae tenetur placeat animi in!</p>
+</main>
+</body>
+</html>
