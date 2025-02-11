@@ -18,6 +18,7 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
 
         }
 
@@ -41,11 +42,31 @@
             border: 1px solid black;
         }
 
+        /*  A declaração abaixo serve para fazer o efeito zebrado, e o número 2 significa que a cada 2 linhas  ficará em determinada cor, podemos alterar, e colocar 3, 4, 5 , quanto desejarmos.  E em vez de colocar (2n), podemos colocar (odd) que signifca impar, ou (even) que significa par,  então todas as celular impares ou pares ficarão cinza de acordo com o selecionado.
+        
+        tbody tr:nth-child(odd)- impar{
+            background-color: lightgray;
+            
+            tbody tr:nth-child(even) - par{
+            background-color: lightgray;
+            
+            Ou podemos declarar, como fizemos abaixo*/
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: #383838;
             color: white;
         }
 
+        /* Para fixar o cabeçado:
+        Lembrando que acrescentamos também position relative no table, para esse  */
+        thead >tr >th{
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+}
         .num{
             text-align: right;
         }
@@ -218,5 +239,11 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur, dicta modi itaque praesentium ut quibusdam ab soluta et repellendus. Magni atque libero rem voluptatum dolorem unde harum, minima soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur debitis sint necessitatibus blanditiis dignissimos labore officia laborum, impedit, quidem delectus autem voluptatibus dolores rerum neque adipisci excepturi ipsum atque quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi voluptates excepturi magni aliquid iusto earum, ea nostrum esse necessitatibus at expedita, repellendus voluptas? Reiciendis provident illo blanditiis accusamus veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, porro magni voluptate cupiditate ullam aut provident, nobis quasi dolorem facere ratione neque aliquid est ducimus, beatae recusandae? Doloremque, officiis mollitia?</p>
 </body>
 </html>
