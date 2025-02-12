@@ -36,8 +36,10 @@
             margin-bottom: 20px;
         }  
 
-        #total_media{
+        .total_media{
             text-align: center;
+            background-color:  rgb(88,86,86);
+            color: white;
         }
 
         .principal{
@@ -154,21 +156,20 @@
 <table class="Teste03">
     <thead>
         <tr class="principal">
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
         
         </tr>
         <tr>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
         </tr>
     </thead>
 
-    <tbody>
         <tr>
-            <td rowspan="4">Exatas</td>
+            <th rowspan="4" scope="rowgroup" id="exatas">Exatas</th>
             <td>Matemática</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -193,12 +194,12 @@
             <td>0.0</td>
         </tr>
         <tr>
-            <th colspan="4"class="media">Média de Exatas</th>
-            <th id="total_media">0.0</th>
+            <th colspan="4"class="media" scope="row">Média de Exatas</th>
+            <td class="total_media">0.0</td>
         
         </tr>
         <tr>
-            <td rowspan="2">Humanas</td>
+            <th rowspan="2" scope="rowgroup" id="humanas">Humanas</th>
             <td>História</td>
             <td>0.0</td>
             <td>0.0</td>
@@ -210,14 +211,12 @@
             <td>0.0</td>
             <td>0.0</td>
         </tr>
-    </tbody>
 
-    <tfoot>
         <tr>
-            <th colspan="4" class="media">Média de Humanas</th>
-            <th>0.0</th>
+            <th colspan="4" scope="row" class="media">Média de Humanas</th>
+            <td class="total_media">0.0</td>
         </tr>
-    </tfoot>
+    </tbody>
 
 </table>
 </body>
